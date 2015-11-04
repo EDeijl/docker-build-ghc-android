@@ -22,6 +22,7 @@ if [ "$1" = install ] || [ "$1" = configure ] ; then
         --hsc2hs-options=--cross-compile \
         --configure-option=--host=$NDK_TARGET \
         "$@"
+        -j1
 elif [ "$1" = build ] ; then
     exec $NEW_CABAL \
         --with-gcc=$CC \

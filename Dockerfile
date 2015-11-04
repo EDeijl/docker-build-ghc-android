@@ -1,12 +1,12 @@
 FROM tcm1911/wheezy-i386
-MAINTAINER sean.seefried@gmail.com
+MAINTAINER erik.deijl@gmail.com
 
 #
 # I live in Australia so change the mirror to one more appropriate
 # to where you live.
 #
-run echo "deb http://ftp.au.debian.org/debian wheezy main" > /etc/apt/sources.list
-run echo "deb-src http://ftp.au.debian.org/debian wheezy main" >> /etc/apt/sources.list
+run echo "deb http://ftp.nl.debian.org/debian wheezy main" > /etc/apt/sources.list
+run echo "deb-src http://ftp.nl.debian.org/debian wheezy main" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get -y install build-essential ghc git libncurses5-dev cabal-install \
   llvm-3.0 ca-certificates curl file m4 autoconf zlib1g-dev \

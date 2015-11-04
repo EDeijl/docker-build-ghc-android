@@ -25,7 +25,7 @@ perl boot
 # before we try to "/usr/bin/install -c -m 644  utils/hsc2hs/template-hsc.h "/home/androidbuilder/.ghc/android-host/lib/ghc-7.8.3"
 # This causes a conflict.
 #
-/usr/bin/install -c -m 755 -d "$GHC_STAGE0_PREFIX/lib/ghc-7.8.3/include"
+/usr/bin/install -c -m 755 -d "$GHC_STAGE0_PREFIX/lib/ghc-7.8.4/include"
 make $MAKEFLAGS
 make $MAKEFLAGS install || true  # first time fails, for unknown reason
 make $MAKEFLAGS install

@@ -64,7 +64,7 @@ function check_install_gmp_constants() {
 # before we try to "/usr/bin/install -c -m 644  utils/hsc2hs/template-hsc.h "/home/androidbuilder/.ghc/android-host/lib/ghc-7.8.3"
 # This causes a conflict.
 #
-/usr/bin/install -c -m 755 -d "$GHC_PREFIX/lib/arm-unknown-linux-androideabi-ghc-7.8.3/include/"
+/usr/bin/install -c -m 755 -d "$GHC_PREFIX/lib/arm-unknown-linux-androideabi-ghc-7.8.4/include/"
 make $MAKEFLAGS || true # TMP hack, see http://hackage.haskell.org/trac/ghc/ticket/7490
 make $MAKEFLAGS || true # TMP hack, target mkGmpDerivedConstants fails on build host
 # There's a long pause at this point. Just be patient!
